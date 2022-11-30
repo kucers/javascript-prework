@@ -1,16 +1,16 @@
 /*Nowa gra*/
 
-var argButtonName, buttonRock, buttonPaper, buttonScissors;
+/*var argButtonName;*/
 
-buttonRock = document.getElementById('button-rock');
-buttonPapper = document.getElementById('button-papper');
-buttonScissors = document.getElementById('button-scissors');
+const   buttonRock = document.getElementById('button-rock'),
+        buttonPapper = document.getElementById('button-papper'),
+        buttonScissors = document.getElementById('button-scissors');
 
 function buttonClicked(argButtonName) {
   clearMessages();
   console.log(argButtonName + ' został kliknięty');
 
-    var argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput;
+    let computerMove, playerMove, randomNumber;
 
   function getMoveName(argMoveId) {
     console.log('wywołano funkcję getMoveName z argumentem: ' + argMoveId);
